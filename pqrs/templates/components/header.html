@@ -1,0 +1,58 @@
+
+    <section class="header">
+        <div class="container">	
+            <div class="header-left">
+                <ul class="pull-left">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-phone" aria-hidden="true"></i>+(57) 8716080
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> alcaldia@alcaldianeiva.gov.co
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right pull-right">
+                <ul>
+                    <div class="social-icon">
+                        <ul>
+                            <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+								Login
+							</a>
+                            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+								<div class="modal-dialog modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											 	<span aria-hidden="true">
+											 		<i class="fa fa-close"></i>
+											 	</span>
+											 </button> 
+											<h4 class="modal-title" id="mySmallModalLabel">
+												Ingresar
+											</h4> 
+											<form class="sm-frm" style="padding:25px" method="post" action="">{%csrf_token%}
+												<label>Usuario:</label>
+												<input type="text" name="txtUsuario" id="txtUsuario" class="form-control" placeholder="Ingrese Usuario">
+												<label>Contraseña:</label>
+												<input type="password" name="txtContraseña" id="txtContraseña" class="form-control" placeholder="Enter Passoward">
+                                                <br>
+												<input type="submit" class="btn btn-default pull-right"></input>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+        </div>
+    </section>

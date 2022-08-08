@@ -1,0 +1,37 @@
+
+{% extends "index.html" %}
+
+{% block encabezado %}
+  {% include "components/header.html"%}
+{% endblock %}
+
+{% block menu %}
+  {% include "components/menu.html"%}
+{% endblock %}
+
+{% block contenido %}
+ 
+<div class="contenedor.login">
+        <div id="login">
+            <div class="titulo">
+                Bienvenido
+            </div>
+            <form id="loginform">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                
+                <input type="password" placeholder="Contraseña" name="password" required>
+                
+                <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+            </form>
+            <div class="pie-form">
+                <a href="#">¿Perdiste tu contraseña?</a>
+                <a href="#">¿No tienes Cuenta? Registrate</a>
+            </div>
+        </div>
+</div>
+        
+{% endblock %}
+
+{% block piePagina %}
+  {% include "components/footer.html" %}
+{% endblock %}

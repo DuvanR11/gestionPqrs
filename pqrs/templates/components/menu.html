@@ -1,0 +1,43 @@
+
+<section id="menu">
+    <div class="container">
+        <div class="menubar">
+            <nav class="navbar navbar-default">
+      
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="https://www.alcaldianeiva.gov.co/SiteAssets/V2/images/logo-footer-gov.svg" width="210"alt="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="/">Inicio</a></li>
+                        <li class="active"><a href="/pqr">Enviar PQRS</a></li>
+                        <li><a href="/oficinas">Oficinas</a></li>
+                        <li><a href="/tabla">Consultar</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="/admin">Panel Administrador</a></li>
+                        {% else %}
+                        
+                        {% endif %} 
+                        <li class="search">
+                            <form action="">
+                                <input type="text" name="search" placeholder="Search....">
+                                <a href="#">
+                                    <span class="lnr lnr-magnifier"></span>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+</section>
+
